@@ -20,12 +20,19 @@
     <picture>
 
       <!-- Landscape -->
-       <source srcset="images/museum-320x.jpg",
-                       images/museum-640x.jpg
-                       images/museum-960x.jpg 3x"
+       <source srcset="images/museum-320x.jpg,
+                       museum-640x.jpg 2x,
+                       museum-960x.jpg 3x"
                media="(max-width: 320px)">
 
+      <source srcset="images/musueum-480x.jpg,
+                      museum-1440x.jpg 2x"
+               media="(max-width: 480px)">
 
+      <!-- Square -->
+      <source srcset="images/musueum-480x480.jpg,
+                      museum-960x960.jpg 2x,
+                      museum-1440x1440.jpg">
     </picture>
   </header>
 </body>
