@@ -15,7 +15,6 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="Museum with artwork on walls">
 
     <picture>
 
@@ -32,8 +31,22 @@
       <!-- Square -->
       <source srcset="images/musueum-480x480.jpg,
                       museum-960x960.jpg 2x,
-                      museum-1440x1440.jpg">
+                      museum-1440x1440.jpg 3x"
+               media="(min-width: 960px)">
+
+      <source srcset="images/museum-640x640.jpg,
+                      museum-1280x1280.jpg 2x,
+                      museum-1920x1920.jpg 3x"
+              media="(min-width: 1280px)">
+
+      <source srcset="images/museum-800x800.jpg,
+                      museum-1600x1600.jpg 2x,
+                      museum-2400x2400.jpg 3x"
+              media="(min-width: 1600px)">
+
+      <img src="images/museum.jpg" alt="Museum with artwork on walls">
     </picture>
+    
   </header>
 </body>
 
